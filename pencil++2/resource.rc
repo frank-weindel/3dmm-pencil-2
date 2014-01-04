@@ -1,0 +1,279 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "windows.h"
+#define IDC_STATIC                        -1
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 561, 372
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CENTER | DS_CENTERMOUSE | WS_MINIMIZEBOX | 
+    WS_MAXIMIZEBOX | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "3DMM Pencil++ 2 Beta 1"
+MENU IDR_MAIN_MENU
+CLASS "3DMMPencil"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LISTBOX         IDC_QUAD_LIST,6,5,114,331,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_SECTION_ADD,66,343,54,24
+    PUSHBUTTON      "-",IDC_SECTION_DELETE,126,343,54,24
+    PUSHBUTTON      "Move Down",IDC_SECTION_MVDN,186,343,54,24
+    PUSHBUTTON      "Move Up",IDC_SECTION_MVUP,6,343,54,24
+    EDITTEXT        IDC_SECTIONEDIT_QUADTYPE,246,18,37,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_SECTIONEDIT_ID,246,42,60,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    GROUPBOX        "Section Data",IDC_SECTBOX,246,324,264,42
+    CONTROL         "Offset:\nLength:",IDC_INF_SECT_DATA,"Static",
+                    SS_LEFTNOWORDWRAP | WS_GROUP,252,334,136,27
+    PUSHBUTTON      "Import...",IDC_SECT_IMPORT,391,333,53,28
+    PUSHBUTTON      "Export...",IDC_SECT_EXPORT,448,333,56,28
+    PUSHBUTTON      "Apply Changes",IDC_APPLY_CHANGE,512,327,41,39,
+                    BS_MULTILINE
+    LTEXT           "Quad:",IDC_QUAD_LBL,246,8,48,8
+    LTEXT           "ID:",IDC_ID_LBL,246,32,48,8
+    LTEXT           "String:",IDC_STRING_LBL,246,56,48,8
+    EDITTEXT        IDC_SECTIONEDIT_STRING,246,66,180,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_TAB1,"SysTabControl32",0x0,246,84,312,234
+    CONTROL         "",IDC_TREEVIEW,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    120,6,120,330
+END
+
+IDD_HEADER DIALOGEX 0, 0, 154, 114
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Header Information"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,95,63,14
+    PUSHBUTTON      "Cancel",IDCANCEL,83,95,63,14
+    EDITTEXT        IDC_SIGNATURE,57,17,37,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Signature:",IDC_STATIC,20,18,32,12
+    EDITTEXT        IDC_UNK1,57,34,37,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "UNK1:",IDC_STATIC,32,34,22,12
+    EDITTEXT        IDC_UNK2,57,51,37,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "UNK2:",IDC_STATIC,31,50,22,12
+    COMBOBOX        IDC_STRTYPE,57,67,92,41,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "String Type:",IDC_STATIC,11,69,41,12
+END
+
+IDD_REFERENCES DIALOGEX 0, 0, 302, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "References",IDC_REF_BOX,1,0,300,150
+    LISTBOX         IDC_LIST_REF,6,9,264,111,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "+",IDC_REFEDIT_ADD,276,6,20,57
+    PUSHBUTTON      "-",IDC_REFEDIT_DELETE,276,66,20,54
+    PUSHBUTTON      "Change",IDC_REFEDIT_CHANGE,252,123,42,17
+    GROUPBOX        "Referenced By",IDC_REFBY_BOX,0,153,300,62
+    LISTBOX         IDC_LIST_REFFEDBY,6,162,288,47,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_REFEDIT_QUADTYPE,6,130,37,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Quad:",IDC_QUAD_LBL,6,120,39,8
+    EDITTEXT        IDC_REFEDIT_ID,48,130,60,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "ID:",IDC_ID_LBL,50,120,48,8
+    EDITTEXT        IDC_REFEDIT_REFID,112,130,60,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Ref ID:",IDC_REFID_LBL,114,120,48,8
+    PUSHBUTTON      "Quad Select",IDC_REFEDIT_OK,202,123,43,17
+END
+
+IDD_VIEW_HEX DIALOGEX 0, 0, 294, 194
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_SYSMENU
+EXSTYLE WS_EX_TRANSPARENT
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT1,9,9,256,169,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_DIALOG_ADDQUAD DIALOGEX 0, 0, 118, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Insert New Quad"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,33,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,61,33,50,14
+    EDITTEXT        IDC_QUADTYPE,8,12,37,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_QUADID,50,12,61,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Quad:",IDC_STATIC,9,3,30,8
+    LTEXT           "ID:",IDC_STATIC,51,3,24,8
+END
+
+IDD_FIND DIALOGEX 0, 0, 311, 83
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_WINDOWEDGE
+CAPTION "Find"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Find Next",IDC_FINDNEXT,254,10,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,254,30,50,14
+    EDITTEXT        IDC_FIND_TYPE,16,21,37,12,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_FIND_ID,58,21,61,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Quad:",IDC_STATIC,17,11,30,8
+    LTEXT           "ID:",IDC_STATIC,59,11,24,8
+    EDITTEXT        IDC_FIND_STR,126,21,113,12,ES_AUTOHSCROLL
+    LTEXT           "String:",IDC_STATIC,127,11,24,8
+    LTEXT           "Search By:",IDC_STATIC,15,37,38,8
+    CONTROL         "Quad and/or ID",IDC_SEARCHBY_QUADID,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,55,36,64,11
+    CONTROL         "String",IDC_SEARCHBY_STRING,"Button",BS_AUTORADIOBUTTON,
+                    122,36,38,11
+    GROUPBOX        "Direction",IDC_STATIC,160,37,79,37
+    CONTROL         "Up",IDC_DIRECT_UP,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,166,47,49,9
+    CONTROL         "Down",IDC_DIRECT_DOWN,"Button",BS_AUTORADIOBUTTON,166,
+                    58,44,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAIN_MENU MENUEX 
+BEGIN
+    POPUP "&File",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&New",                        57600,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Open...",                    57601,MFT_STRING,MFS_ENABLED
+        MENUITEM "&Save",                       57603,MFT_STRING,MFS_ENABLED
+        MENUITEM "Save &As...",                 111,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "&Exit",                       107,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "&Edit",                          65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "&Find",                       119,MFT_STRING,MFS_ENABLED
+        MENUITEM "Tree &View",                  121,MFT_STRING,MFS_ENABLED
+    END
+    MENUITEM "&Header Info",                116,MFT_STRING,MFS_ENABLED
+    POPUP "Help",                           65535,
+    MFT_STRING | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    BEGIN
+        MENUITEM "About...",                    127,MFT_STRING,MFS_ENABLED
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON2               ICON                    "ico.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,1,2
+ PRODUCTVERSION 0,0,1,2
+ FILEFLAGSMASK 0x37L
+#ifdef _DEBUG
+ FILEFLAGS 0x21L
+#else
+ FILEFLAGS 0x20L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "Uh oh!"
+            VALUE "CompanyName", "Frankie Weindel"
+            VALUE "FileDescription", "3DMM Pencil++ 2"
+            VALUE "FileVersion", "0, 0, 1, 2"
+            VALUE "InternalName", "3dmmpenc"
+            VALUE "LegalCopyright", "Copyright (C) 2005 Frankie Weindel"
+            VALUE "OriginalFilename", "3dmmpenc.exe"
+            VALUE "ProductName", " 3dmmpenc Application"
+            VALUE "ProductVersion", "0, 0, 1, 2"
+            VALUE "SpecialBuild", "The Beginning"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

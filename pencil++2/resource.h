@@ -1,0 +1,120 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by resource.rc
+//
+#define IDD_DIALOG_MAIN                 101
+#define IDD_DIALOG_ADDQUAD              104
+#define IDD_DIALOG_ADDREF               105
+#define IDR_MAIN_MENU                   106
+#define ID_FILE_EXIT                    107
+#define IDD_DIALOG1                     109
+#define IDD_FIND                        109
+#define ID_FILE_OPEN110                 110
+#define ID_FILE_SAVEAS1                 111
+#define ID_FILE_SAVEAS                  112
+#define ID_FILE_SAVEAS113               113
+#define ID_FILE_EXIT114                 114
+#define IDD_HEADER                      115
+#define ID_HEADERINFO                   116
+#define ID_MENU_HEADER                  116
+#define ID_MENUED                       116
+#define ID_Menu                         117
+#define ID_EDIT_FIND1                   119
+#define IDD_TREEVIEW                    120
+#define ID_EDIT_TREEVIEW                121
+#define IDD_DIALOG2                     122
+#define IDD_VIEWHEX                     122
+#define IDI_ICON1                       123
+#define IDD_DIALOG_ABOUT                125
+#define ID_HELP126                      126
+#define ID_HELP_ABOUT                   127
+#define IDR_MENU1                       128
+#define ID_FEF_FEF                      130
+#define IDI_ICON2                       131
+#define IDD_REFERENCES                  132
+#define IDD_VIEW_HEX                    133
+#define IDC_QUAD_LIST                   1002
+#define IDC_SECTION_ADD                 1006
+#define IDC_SECTION_MVDN                1007
+#define IDC_SECTIONEDIT_QUADTYPE        1008
+#define IDC_SECTION_DELETE              1009
+#define IDC_SECTION_MVUP                1010
+#define IDC_SECTIONEDIT_ID              1011
+#define IDC_INF_SECT_DATA               1012
+#define IDC_SECT_VIEWHEX                1013
+#define IDC_LOC_SECT_DATA               1014
+#define IDC_SECT_IMPORT                 1015
+#define IDC_SECT_EDIT                   1016
+#define IDC_SECT_EXPORT                 1017
+#define IDC_LOC_SECT_DATA2              1018
+#define IDC_APPLY_C                     1019
+#define IDC_APPLY_CHANGE                1019
+#define IDC_COMBO_MODE                  1020
+#define IDC_SECTIONEDIT_STRING          1021
+#define IDC_EDIT_OTHER_MODE             1022
+#define IDC_BUT_DETECT                  1023
+#define IDC_LIST_REF                    1024
+#define IDC_REFEDIT_MVUP                1025
+#define IDC_REFEDIT_MVDN                1026
+#define IDC_REFEDIT_ADD                 1027
+#define IDC_REFEDIT_DELETE              1028
+#define IDC_REFEDIT_CHANGE              1029
+#define IDC_LIST_REFFEDBY               1030
+#define IDC_REFEDIT_QUADTYPE            1031
+#define IDC_REFEDIT_ID                  1032
+#define IDC_QUADTYPE                    1033
+#define IDC_REFEDIT_REFID               1033
+#define IDC_QUADID                      1034
+#define IDC_REFEDIT_OK                  1034
+#define IDC_FIND_FINDNEXT               1036
+#define IDC_FINDNEXT                    1036
+#define IDC_FIND_TYPE                   1038
+#define IDC_FIND_ID                     1039
+#define IDC_FIND_STR                    1040
+#define IDC_FORCEUNICODE                1040
+#define IDC_UNK2                        1040
+#define IDC_TIMESREFFED                 1042
+#define IDC_MAGICNUM                    1044
+#define IDC_UNK1                        1045
+#define IDC_LIST1                       1046
+#define IDC_LIST_PLUGINS                1046
+#define IDC_EDIT_HEIGHT                 1047
+#define IDC_EDIT_WIDTH                  1048
+#define IDC_EDIT2                       1049
+#define IDC_EDIT_VIEWHEX                1049
+#define IDC_BUTTON1                     1050
+#define IDC_EDIT_CHANGE                 1050
+#define IDC_SEARCHBY_QUADID             1051
+#define IDC_SEARCHBY_STRING             1052
+#define IDC_DIRECT_UP                   1053
+#define IDC_DIRECT_DOWN                 1054
+#define IDC_TREEVIEW                    1055
+#define IDC_HOTKEY1                     1057
+#define IDC_ABOUTPLUGIN                 1058
+#define IDC_TAB2                        1061
+#define IDC_TAB1                        1063
+#define IDC_SECTBOX                     1064
+#define IDC_QUAD_LBL                    1065
+#define IDC_ID_LBL                      1066
+#define IDC_STRING_LBL                  1067
+#define IDC_REF_BOX                     1068
+#define IDC_REFBY_BOX                   1069
+#define IDC_REFID_LBL                   1070
+#define IDC_EDIT1                       1072
+#define IDC_STRTYPE                     1075
+#define IDC_SIGNATURE                   1076
+#define ID_FILE_NEW1                    57600
+#define ID                              57600
+#define ID_FILE_OPEN1                   57601
+#define ID_FILE_SAVE1                   57603
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        134
+#define _APS_NEXT_COMMAND_VALUE         40001
+#define _APS_NEXT_CONTROL_VALUE         1078
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

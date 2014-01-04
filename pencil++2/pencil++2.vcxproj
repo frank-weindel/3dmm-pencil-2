@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{09590B42-9C0E-4C79-B545-80A2F20F8D61}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>pencil2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>DecompProxy.lib;comctl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="applychanges.cpp" />
+    <ClCompile Include="cpencilfuncs.cpp" />
+    <ClCompile Include="errorhandler.cpp" />
+    <ClCompile Include="externalmessaging.cpp" />
+    <ClCompile Include="find.cpp" />
+    <ClCompile Include="finddlg.cpp" />
+    <ClCompile Include="headerdlg.cpp" />
+    <ClCompile Include="loader.cpp" />
+    <ClCompile Include="maindialog.cpp" />
+    <ClCompile Include="modifyfilestructure.cpp" />
+    <ClCompile Include="pencil.cpp" />
+    <ClCompile Include="plugins.cpp" />
+    <ClCompile Include="quaddisplay.cpp" />
+    <ClCompile Include="quads.cpp" />
+    <ClCompile Include="quadstring.cpp" />
+    <ClCompile Include="referencedialog.cpp" />
+    <ClCompile Include="references.cpp" />
+    <ClCompile Include="saver.cpp" />
+    <ClCompile Include="sections.cpp" />
+    <ClCompile Include="sectns.cpp" />
+    <ClCompile Include="sorter.cpp" />
+    <ClCompile Include="usefulfuncs.cpp" />
+    <ClCompile Include="viewhexdlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="3dmmclass.h" />
+    <ClInclude Include="decompproxy.h" />
+    <ClInclude Include="dialogcontrols.h" />
+    <ClInclude Include="editstructs.h" />
+    <ClInclude Include="externalmessaging.h" />
+    <ClInclude Include="extmessages.h" />
+    <ClInclude Include="fileformatstructs.h" />
+    <ClInclude Include="find.h" />
+    <ClInclude Include="globalconstants.h" />
+    <ClInclude Include="hex.h" />
+    <ClInclude Include="loader.h" />
+    <ClInclude Include="pclasserrors.h" />
+    <ClInclude Include="pencil.h" />
+    <ClInclude Include="pencilclass.h" />
+    <ClInclude Include="plugins.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="sortfind.h" />
+    <ClInclude Include="usefulfuncs.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resource.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
